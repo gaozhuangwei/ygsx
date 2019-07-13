@@ -4,6 +4,8 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Crt from './views/Crt.vue'
 import My from './views/My.vue'
+import City from './views/City.vue'
+import Login from './views/Login.vue'
 
 Vue.use(Router)
 
@@ -15,6 +17,10 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path:'/home',
+      redirect:{name:'home'}
     },
     {
       path: '/about',
@@ -33,6 +39,16 @@ export default new Router({
       path:'/my',
       name:'my',
       component:My,
+    },
+    {
+      path:'/city',
+      name:'city',
+      component:City,
+    },
+    {
+      path:'/login',
+      name:'login',
+      component:Login,
     }
   ]
 })

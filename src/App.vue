@@ -38,6 +38,7 @@
       background:#fff;
       bottom:0;
       border-top:.0125rem solid #dbdbdb;
+      z-index: 100;
     }
     #nav dl{
       float: left;
